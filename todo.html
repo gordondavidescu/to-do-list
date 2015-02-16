@@ -4,13 +4,24 @@
 </head>
 
 <body>
-<p>This is a word.</p>
 
-<p>These are words.</p>
+<form id="input" action="form_action.asp">
+Item to add : <input type="text" name="additem">
+<input type="button" onclick="addtolist()" value="Submit">  
+</form>
+
+<p id="list">These are words.</p>
 
 <p>I like words.</p>
   <script type="text/javascript">
-
+    var list= [];
+    
+    function addtolist() {
+    list.push(additem);  
+      
+    }
+    
+    document.getElementById("list").innerHTML = list;
   </script>
 
 </body>
