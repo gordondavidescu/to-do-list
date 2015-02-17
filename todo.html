@@ -20,8 +20,9 @@ Item to add : <input type="text" name="additem">
     list.push(additem);  
       
     }
-    
-    document.getElementById("list").innerHTML = list[0];
+    for (i=0; i<list.length; i++){
+    document.getElementById("list").innerHTML = list[i];
+    }
   </script>
 
 </body>
