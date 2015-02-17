@@ -7,14 +7,14 @@
 
 <form id="input" action="form_action.asp">
 Item to add : <input type="text" name="additem">
-<input type="button" onclick="addtolist()" value="Submit">  
+<input type="button" onclick="addtolist(additem)" value="Submit">  
 </form>
 
 <p id="list">These are words.</p>
 
 <p>I like words.</p>
   <script type="text/javascript">
-    var list= [];
+    var list= ["quell"];
     
     function addtolist() {
     list.push(additem);  
@@ -22,6 +22,8 @@ Item to add : <input type="text" name="additem">
     }
     
     document.getElementById("list").innerHTML = list;
+    document.getElementById("list").innerHTML = "hi";
+location.reload(forceGet);
   </script>
 
 </body>
